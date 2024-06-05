@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum NBA</title>
     <style>
-        /* Estilos gerais */
+     
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -38,7 +38,6 @@
             color: #007bff;
         }
 
-        /* Estilos específicos do fórum */
         .forum {
             border: 1px solid #ccc;
             padding: 20px;
@@ -55,7 +54,7 @@
 
         .forum h1 img {
             margin-right: 5px;
-            max-height: 10px; /* Tamanho da imagem ajustado */
+            max-height: 10px; 
         }
 
         .forum h1 span {
@@ -85,14 +84,14 @@
         }
         
         main {
-            margin: 0 20px; /* espaço lateral ajustado */
+            margin: 0 20px; 
         }
     </style>
 </head>
 <body>
     <header style="background-color: #1a477b; color: #fff;">
         <h1>
-            <img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnba.png" alt="Logo da NBA">
+            <img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnba.png" style="width: 50px;" alt="Logo da NBA">
             <span>Fórum NBA</span>
         </h1>
     </header>
@@ -115,12 +114,7 @@
                 <p>Autor: Usuário123</p>
                 <p>Última Atualização: 21 de Maio, 2024</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nibh nec libero iaculis posuere.</p>
-            </div>
-            <div class="post">
-                <h3>Outro Título</h3>
-                <p>Autor: NBAfanatic</p>
-                <p>Última Atualização: 20 de Maio, 2024</p>
-                <p>Nullam molestie est nec nisi rhoncus, ac condimentum sapien fermentum.</p>
+                <a href="#">Ler mais...</a>
             </div>
         </section>
     </main>
