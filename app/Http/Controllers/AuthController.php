@@ -12,8 +12,8 @@ class AuthController extends Controller
             return view('auth.login');
         } else {
             $credentials = $request->validate([
-                'email' => 'required|string|email',
-                'password' => 'required|string',
+                'email' => 'required|string|email|max:255|unique:users',
+                'password' => 'required|string|min:8|confirmed',
             ]);
 
             if (Auth::attempt($credentials)) {
@@ -24,7 +24,6 @@ class AuthController extends Controller
             return back()->withErrors([
                 'email' => 'Credenciais inválidas.',
             ])->withInput();           
-            
         }
     }
 

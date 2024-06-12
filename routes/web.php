@@ -22,10 +22,17 @@ Route::match( ['get', 'post'], '/register',
 Route::middleware('auth')-> group(function() {
     Route::get( '/users', 
         [UserController::class, 'listAllUsers']
-    )->name('routeListAllUsers');
-
+    )->name('listAllUsers');
 
     Route::get( '/users/{uid}', 
         [UserController::class, 'listUser']
     )->name ('listUser');
+
+    Route::put( '/users/{uid}/update', 
+        [UserController::class, 'updateUser']
+    )->name ('updateUser');
+
+    Route::delete( '/users/{uid}/delete', 
+        [UserController::class, 'deleteUser']
+    )->name ('deleteUser');
 });

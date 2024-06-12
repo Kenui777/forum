@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - NBA</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Login - NBA</h2>
+        <form method="post" action="{{route ('login')}}">
+            @csrf
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="{{ old('name')}}"required>
+            @error('email') <span>{{$message}}</span> @enderror
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,26 +60,7 @@
             margin-bottom: 10px;
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Login - NBA</h2>
-        <form method="post" action="{{route ('login')}}">
-            @csrf
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
-
-            <input type="submit" value="Entrar">
-        </form>
-    </div>
 </body>
 </html>
-<?php
-if(isset($_GET['error']) && $_GET['error'] == '1') {
-    echo '<p class="error">Usuário ou senha incorretos.</p>';
-}
-?>
+
 
