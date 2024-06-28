@@ -1,1 +1,9 @@
+Esse projeto foi desenvolvido por mim, Kenui Engler de Oliveira Martins, e por João Vitor Aparecido Carpim de Souza e tivemos como orientador: André Cassulino Araújo Souza. 
+Gostamos muito desse desenvolvimento pelo fato de ele ser fullstack e nos ajudar a ter um conhecimento maior, principalmente relacionando diferentes matérias e o relacionamento com os colegas em relação à ajuda no desenvolvimento.
+Desenvolvemos um fórum sobre viagens. Tivemos alguns problemas relacionados ao upload no GitHub e em relação a algumas páginas e seus direcionamentos também tivemos alguns erros, mas ao final todas as funcionalidades foram concluídas, tanto as funcionais quanto as não funcionais.
 
+Tecnologias usadas:
+- Linguagem: PHP
+- Framework: Laravel
+- Arquitetura: MVC
+- Banco de Dados: Relacional
